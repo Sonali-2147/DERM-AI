@@ -1,0 +1,8 @@
+streamlit
+tensorflow
+opencv-python
+numpy
+requests
+Pillow
+geopy
+folium
