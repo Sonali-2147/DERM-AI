@@ -10,10 +10,10 @@ import os
 import requests
 
 # Load the trained model
-model = load_model('C:/Users/kadam/Downloads/Derm-Ai (2) (1)/final_model_with_transfer_learning.keras')
+model = load_model('https://github.com/Sonali-2147/DERM-AI/blob/main/trained_model.h5')
 
 # Define class names
-class_names = os.listdir('C:/DERM-AI PROJECT/Disease_Dataset_5_classes/train')
+class_names = ["Acne_Rosacea","benign","Eczema","maligant","Melanoma Skin Cancer Nevi and Moles"]
 # Define disease names corresponding to class labels
 disease_names = ['A preliminary diagnosis for acne and rosacea, two common dermatological conditions, would typically involve assessing the presence of comedones, papules, and pustules for acne, and examining for persistent facial redness, flushing, and visible blood vessels for rosacea.   𝗣𝗥𝗘𝗖𝗔𝗨𝗧𝗜𝗢𝗡𝗔𝗥𝗬 𝗠𝗘𝗔𝗦𝗨𝗥𝗘𝗦:-To manage acne and rosacea, opt for gentle skincare products and avoid harsh cleansers or abrasive scrubs. Always use sunscreen with at least SPF 30 to protect your skin from sun damage, which can exacerbate rosacea symptoms and lead to post-inflammatory hyperpigmentation in acne-prone skin. Additionally, identify and avoid triggers such as spicy foods, alcohol, and stress to minimize flare-ups of both conditions.', 'A preliminary diagnosis for a benign dermatological disease often involves evaluating the appearance, texture, and location of skin lesions, along with considering patient history and risk factors, to differentiate it from potentially more serious conditions.', 'A preliminary diagnosis for eczema involves assessing the presence of characteristic symptoms such as redness, itching, and dry, scaly patches of skin, often in conjunction with a patients medical history and possible triggers.','A preliminary diagnosis for a malignant dermatological disease typically involves identifying concerning features in skin lesions, such as irregular borders, asymmetry, changes in color or size, and history of rapid growth or ulceration, necessitating further evaluation through biopsy or imaging.','A preliminary diagnosis for melanoma skin cancer, nevi, and moles entails examining for suspicious features including asymmetry, irregular borders, uneven color distribution, diameter larger than 6mm, and evolving characteristics, often requiring dermoscopic evaluation and biopsy for confirmation.']  # Update with actual disease names
 
